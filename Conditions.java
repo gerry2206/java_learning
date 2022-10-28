@@ -2,29 +2,19 @@ import java.util.*;
 
 public class Conditions {
     public static void main(String args[]){
-    Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    int b = sc.nextInt();
-    int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-    switch(n){
-        case 1 : System.out.println(a+b);
-        break;
+        if(a == b){
+            System.out.println("Equal");
+        }
+        else if (a > b ){
+            System.out.println("Greater");
+        }
+        else{
+            System.out.println("Lesser");
+        }
 
-        case 2 : System.out.println(a-b);
-        break;
-
-        case 3 : System.out.println(a*b);
-        break;
-
-        case 4 : System.out.println(a/b);
-        break;
-
-        case 5 : System.out.println(a%b);
-        break;
-
-        default : System.out.println("Error 404!");
     }
-
-}
 }
